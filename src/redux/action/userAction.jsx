@@ -1,7 +1,7 @@
 import { message } from "antd";
 import axios from "axios";
 axios.defaults.withCredentials = true;
-axios.defaults.baseURL = "http://localhost:5002";
+axios.defaults.baseURL = "https://easyrentify.onrender.com/";
 export const userLogin = (reqObj) => async dispatch => {
     dispatch({ type: 'LOADING', payload: true })
 
